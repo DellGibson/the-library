@@ -13,6 +13,6 @@ library:
   skills:
     - name: prompt-enhancer
       description: Improve, rewrite, polish, tighten, or fix a draft prompt the user has already written. Returns only the enhanced prompt with no commentary — paste-ready replacement for the original draft.
-      source: C:/Users/George/.claude/skills/prompt-enhancer/SKILL.md
+      source: https://github.com/DellGibson/gkov-skills/blob/main/skills/prompt-enhancer/SKILL.md
   agents: []
   prompts: []
