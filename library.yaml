@@ -11,8 +11,128 @@ default_dirs:
 
 library:
   skills:
+    - name: agent-browser
+      description: Browser automation CLI for AI agents.
+      source: https://github.com/DellGibson/gkov-skills/blob/main/skills/agent-browser/SKILL.md
+    - name: bridge
+      description: Write to and query the Bridge knowledge architecture (Google Docs -> NotebookLM -> Gemini)
+      source: https://github.com/DellGibson/gkov-skills/blob/main/skills/bridge/SKILL.md
+    - name: dev-process
+      description: Development process checklist with mandatory testing gates.
+      source: https://github.com/DellGibson/gkov-skills/blob/main/skills/dev-process/SKILL.md
+    - name: dogfood
+      description: Systematically explore and test a web application to find bugs, UX issues, and other problems.
+      source: https://github.com/DellGibson/gkov-skills/blob/main/skills/dogfood/SKILL.md
+    - name: electron
+      description: Automate Electron desktop apps (VS Code, Slack, Discord, Figma, Notion, Spotify, etc.) using agent-browser via Chrome DevTools Protocol.
+      source: https://github.com/DellGibson/gkov-skills/blob/main/skills/electron/SKILL.md
+    - name: fleet
+      description: Homelab fleet health sweep across BANE, VENOM, AW1, and MARV.
+      source: https://github.com/DellGibson/gkov-skills/blob/main/skills/fleet/SKILL.md
+    - name: kaos
+      description: Transforms chaotic text into clean, structured ASCII output.
+      source: https://github.com/DellGibson/gkov-skills/blob/main/skills/kaos/SKILL.md
+    - name: machines
+      description: Network details, SSH/WinRM access, AW1/VENOM/MARV commands, and remote host management.
+      source: https://github.com/DellGibson/gkov-skills/blob/main/skills/machines/SKILL.md
+    - name: nlm
+      description: Query NotebookLM notebooks with automatic routing.
+      source: https://github.com/DellGibson/gkov-skills/blob/main/skills/nlm/SKILL.md
+    - name: openclaw
+      description: OpenClaw platform architecture and operations reference — gateways, workspaces, auth, channels, plugins, memory, heartbeat, cron.
+      source: https://github.com/DellGibson/gkov-skills/blob/main/skills/openclaw/SKILL.md
+    - name: project-audit
+      description: Audit Projects folder - classify by zone, enforce occupancy limits, update MANIFEST.md
+      source: https://github.com/DellGibson/gkov-skills/blob/main/skills/project-audit/SKILL.md
     - name: prompt-enhancer
-      description: Improve, rewrite, polish, tighten, or fix a draft prompt the user has already written. Returns only the enhanced prompt with no commentary — paste-ready replacement for the original draft.
+      description: Improve, rewrite, polish, tighten, or fix a draft prompt the user has already written. Returns only the enhanced prompt with no commentary.
       source: https://github.com/DellGibson/gkov-skills/blob/main/skills/prompt-enhancer/SKILL.md
-  agents: []
-  prompts: []
+    - name: retro
+      description: Cross-session retrospective analyzing accumulated learnings and issues to generate specific CC behavioral configuration changes.
+      source: https://github.com/DellGibson/gkov-skills/blob/main/skills/retro/SKILL.md
+    - name: session-critic
+      description: "Brutal evaluation of your current Claude Code session when you're lost, uncertain, or overcomplicating."
+      source: https://github.com/DellGibson/gkov-skills/blob/main/skills/session-critic/SKILL.md
+    - name: skills-audit
+      description: Comprehensive health check and quality review of all installed Claude Code skills.
+      source: https://github.com/DellGibson/gkov-skills/blob/main/skills/skills-audit/SKILL.md
+    - name: vault
+      description: GKOV Obsidian vault operations — audit, ingest, compile, clip, ask.
+      source: https://github.com/DellGibson/gkov-skills/blob/main/skills/vault/SKILL.md
+  agents:
+    - name: devops-incident-responder
+      description: Use when actively responding to production incidents, diagnosing critical service failures, or conducting incident postmortems to implement permanent fixes and preventative measures.
+      source: https://github.com/DellGibson/gkov-skills/blob/main/agents/devops-incident-responder.md
+    - name: infra-auditor
+      description: Homelab infrastructure auditor.
+      source: https://github.com/DellGibson/gkov-skills/blob/main/agents/infra-auditor.md
+    - name: meta-agent
+      description: "Generates a new, complete Claude Code sub-agent configuration file from a user's description."
+      source: https://github.com/DellGibson/gkov-skills/blob/main/agents/meta-agent.md
+  prompts:
+    - name: audit
+      description: Security and quality audit (Windows-optimized)
+      source: https://github.com/DellGibson/gkov-skills/blob/main/prompts/audit.md
+    - name: bugfix
+      description: Systematic bug hunting and fixing workflow
+      source: https://github.com/DellGibson/gkov-skills/blob/main/prompts/bugfix.md
+    - name: check
+      description: Pre-commit quality and security checks
+      source: https://github.com/DellGibson/gkov-skills/blob/main/prompts/check.md
+    - name: commit
+      description: Create conventional commit with emoji
+      source: https://github.com/DellGibson/gkov-skills/blob/main/prompts/commit.md
+    - name: docs
+      description: Generate or update project documentation
+      source: https://github.com/DellGibson/gkov-skills/blob/main/prompts/docs.md
+    - name: enhance
+      description: Enhance a draft prompt before sending.
+      source: https://github.com/DellGibson/gkov-skills/blob/main/prompts/enhance.md
+    - name: feature
+      description: Complete feature development workflow
+      source: https://github.com/DellGibson/gkov-skills/blob/main/prompts/feature.md
+    - name: fix-pr
+      description: Address unresolved PR review comments
+      source: https://github.com/DellGibson/gkov-skills/blob/main/prompts/fix-pr.md
+    - name: good
+      description: Tactical reframe utility - convert blockers into forward momentum using the 4A framework
+      source: https://github.com/DellGibson/gkov-skills/blob/main/prompts/good.md
+    - name: investigate
+      description: Codebase investigation — deep code analysis, tracing execution paths, mapping architecture
+      source: https://github.com/DellGibson/gkov-skills/blob/main/prompts/investigate.md
+    - name: migrate
+      description: Safe migration workflow (API, database, dependencies)
+      source: https://github.com/DellGibson/gkov-skills/blob/main/prompts/migrate.md
+    - name: perf
+      description: Performance profiling workflow - measure, optimize, verify
+      source: https://github.com/DellGibson/gkov-skills/blob/main/prompts/perf.md
+    - name: pihole-analyze
+      description: Analyze Pi-hole DNS traffic for a device to find telemetry leaks and recommend blocks
+      source: https://github.com/DellGibson/gkov-skills/blob/main/prompts/pihole-analyze.md
+    - name: prime
+      description: Load project and session context before starting work.
+      source: https://github.com/DellGibson/gkov-skills/blob/main/prompts/prime.md
+    - name: refactor
+      description: Safe refactoring with test coverage
+      source: https://github.com/DellGibson/gkov-skills/blob/main/prompts/refactor.md
+    - name: review
+      description: Code review workflow - PR or local changes
+      source: https://github.com/DellGibson/gkov-skills/blob/main/prompts/review.md
+    - name: riper
+      description: Phased workflow - research, plan, execute, review
+      source: https://github.com/DellGibson/gkov-skills/blob/main/prompts/riper.md
+    - name: scaffold
+      description: Initialize new project with Claude Code config
+      source: https://github.com/DellGibson/gkov-skills/blob/main/prompts/scaffold.md
+    - name: secrets-scanner
+      description: Scan codebase for exposed secrets, credentials, and sensitive information
+      source: https://github.com/DellGibson/gkov-skills/blob/main/prompts/secrets-scanner.md
+    - name: spike
+      description: Quick exploration or proof-of-concept (throwaway code OK)
+      source: https://github.com/DellGibson/gkov-skills/blob/main/prompts/spike.md
+    - name: tdd
+      description: Test-driven development workflow
+      source: https://github.com/DellGibson/gkov-skills/blob/main/prompts/tdd.md
+    - name: visual
+      description: Visual iteration workflow - match a design/screenshot
+      source: https://github.com/DellGibson/gkov-skills/blob/main/prompts/visual.md
