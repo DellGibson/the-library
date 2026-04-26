@@ -136,3 +136,6 @@ library:
     - name: visual
       description: Visual iteration workflow - match a design/screenshot
       source: https://github.com/DellGibson/gkov-skills/blob/main/prompts/visual.md
+    - name: workspace-auditor
+      description: 8-phase QC and architecture audit for any workspace — inventory, structural review, doc gaps, agent alignment, operational risk, bloat, and gap analysis
+      source: https://github.com/DellGibson/gkov-skills/blob/main/prompts/workspace-auditor.md
