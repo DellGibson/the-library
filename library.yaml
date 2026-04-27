@@ -56,6 +56,9 @@ library:
     - name: skills-audit
       description: Comprehensive health check and quality review of all installed Claude Code skills.
       source: https://github.com/DellGibson/gkov-skills/blob/main/skills/skills-audit/SKILL.md
+    - name: validate-work
+      description: Conduct a rigorous independent QC validation review of completed work. Produces BLUF + 10-section evidence-based report with severity ratings and go/no-go determination.
+      source: ~/.claude/skills/validate-work/SKILL.md
     - name: vault
       description: GKOV Obsidian vault operations — audit, ingest, compile, clip, ask.
       source: https://github.com/DellGibson/gkov-skills/blob/main/skills/vault/SKILL.md
