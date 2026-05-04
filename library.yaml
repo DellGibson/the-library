@@ -17,6 +17,9 @@ library:
     - name: bridge
       description: Write to and query the Bridge knowledge architecture (Google Docs -> NotebookLM -> Gemini)
       source: https://github.com/DellGibson/gkov-skills/blob/main/skills/bridge/SKILL.md
+    - name: capability-strengthening-block
+      description: Autonomous high-leverage system improvement session. Picks one lane (quant, AI workflows, knowledgebase, CI/docs, automation, skill-sop, connections), builds a concrete artifact, delivers a structured 5-section output.
+      source: https://github.com/DellGibson/gkov-skills/blob/main/skills/capability-strengthening-block/SKILL.md
     - name: coa
       description: Generate, evaluate, compare, refine, or red-team Courses of Action (COAs) using FASDC criteria. 8 modes, session-context aware, domain-agnostic — military, business, technical, personal, policy.
       source: https://github.com/DellGibson/gkov-skills/blob/main/skills/coa/SKILL.md
