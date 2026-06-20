@@ -56,6 +56,9 @@ library:
     - name: retro
       description: Cross-session retrospective analyzing accumulated learnings and issues to generate specific CC behavioral configuration changes.
       source: https://github.com/DellGibson/gkov-skills/blob/main/skills/retro/SKILL.md
+    - name: scaffolder
+      description: Generate a clean, project-specific folder structure with starter Markdown docs inside an existing directory. Inspects context, infers purpose and scale, builds a tailored (not generic) tree, never overwrites existing files.
+      source: https://github.com/DellGibson/gkov-skills/blob/main/skills/scaffolder/SKILL.md
     - name: session-critic
       description: "Brutal evaluation of your current Claude Code session when you're lost, uncertain, or overcomplicating."
       source: https://github.com/DellGibson/gkov-skills/blob/main/skills/session-critic/SKILL.md
